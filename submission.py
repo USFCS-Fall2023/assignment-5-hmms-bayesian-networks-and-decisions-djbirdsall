@@ -1,7 +1,10 @@
 import HMM
+import alarm
+import carnet
 
 if __name__ == "__main__":
-    print("Question 2 answers:\n")
+    print("Assignment 5 - Duncan Birdsall")
+    print("\nQuestion 2 answers:\n")
     print("My implementation of load with two_english: ")
     model = HMM.HMM()
     model.load('two_english')
@@ -25,3 +28,7 @@ if __name__ == "__main__":
     print("\nThis is an example using ambiguous_sents.obs.\nIt returns a list of dictionaries with the keys being the number associated with the observation in the file\nand the values being a list of the most likely sequence of states:")
     print(model.viterbi(filename='ambiguous_sents.obs'))
     print("\n\nQuestion 3 answers:\n")
+    alarm.question3p1()
+    carnet.question3p2()
+    carnet.question3p3()
+    print("\nI hope that you are satisfied with my work on this assignment!\nThank you!")
